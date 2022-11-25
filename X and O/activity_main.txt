@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aladin"
+        android:text="X and O "
+        android:textColor="#037167"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textResult"-->
+    <!--        android:layout_width="128dp"-->
+    <!--        android:layout_height="51dp"-->
+    <!--        android:layout_marginTop="80dp"-->
+    <!--        android:fontFamily="@font/aladin"-->
+    <!--        android:text="Match Draw"-->
+    <!--        android:textColor="#037167"-->
+    <!--        android:textSize="30dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.498"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="10dp" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/bnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reset"
+        android:textSize="22dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
